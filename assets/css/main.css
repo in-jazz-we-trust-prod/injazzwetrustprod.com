@@ -2906,8 +2906,7 @@ body.is-preload #header.alt {
 }
 #banner.project {
   background-size: cover;
-  height: 30dvh;
-  min-height: 30em;
+  height: 16em;
   max-height: none;
 }
 #banner.style1:after {
@@ -3294,7 +3293,7 @@ body.is-preload #banner > .inner {
   margin: 0;
 }
 #menu ul.sub-links > li > ul {
-  padding-left: 3em;
+  padding-left: 2em;
 }
 #menu ul.sub-links > li > a {
   position: relative;
