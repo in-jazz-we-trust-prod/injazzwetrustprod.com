@@ -2531,6 +2531,15 @@ button:disabled,
   }
 }
 
+/* Youtube Wrapper */
+.youtube-wrapper p {
+  text-align: center;
+}
+.youtube-wrapper iframe {
+  max-width: 516px;
+  height: 315px;
+}
+
 /* Header */
 @-moz-keyframes reveal-header {
   0% {
@@ -3281,11 +3290,17 @@ body.is-preload #banner > .inner {
 #menu ul.links > li:first-child > a:not(.button) {
   border-top: 0 !important;
 }
-#menu ul.sub-links li a {
+#menu ul.links ul {
+  margin: 0;
+}
+#menu ul.sub-links > li > ul {
+  padding-left: 3em;
+}
+#menu ul.sub-links > li > a {
   position: relative;
   padding: 0 0 0 2em;
 }
-#menu ul.sub-links li a:before, #menu ul.sub-links li a:after {
+#menu ul.sub-links > li > a:before, #menu ul.sub-links > li > a:after {
   -moz-transition: opacity 0.35s ease;
   -webkit-transition: opacity 0.35s ease;
   -ms-transition: opacity 0.35s ease;
@@ -3302,15 +3317,15 @@ body.is-preload #banner > .inner {
   bottom: 0;
   height: 100%;
 }
-#menu ul.sub-links li a:before {
+#menu ul.sub-links > li > a:before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.63723' height='5.4181' viewBox='0 0 68.63723 5.4181' creator='Katerina Limpitsouni'%3E%3Cpath d='M2.41484,5.41803c21.26918-.13932,42.53836-.27864,63.80754-.41797,3.21622-.02107,3.22336-5.02111,0-5L2.41484,.41803c-3.21622,.02107-3.22336,5.02111,0,5h0Z' fill='%232f2613' origin='undraw'/%3E%3C/svg%3E");
 }
-#menu ul.sub-links li a:after {
+#menu ul.sub-links > li > a:after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68.63723' height='5.4181' viewBox='0 0 68.63723 5.4181' creator='Katerina Limpitsouni'%3E%3Cpath d='M2.41484,5.41803c21.26918-.13932,42.53836-.27864,63.80754-.41797,3.21622-.02107,3.22336-5.02111,0-5L2.41484,.41803c-3.21622,.02107-3.22336,5.02111,0,5h0Z' fill='%23d89215' origin='undraw'/%3E%3C/svg%3E");
   opacity: 0;
   z-index: 1;
 }
-#menu ul.sub-links li a:hover:after {
+#menu ul.sub-links > li > a:hover:after {
   opacity: 1;
 }
 #menu .close {
