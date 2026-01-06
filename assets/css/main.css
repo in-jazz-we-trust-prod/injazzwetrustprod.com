@@ -2540,6 +2540,16 @@ button:disabled,
   height: 315px;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* Header */
 @-moz-keyframes reveal-header {
   0% {
@@ -2808,7 +2818,7 @@ body.is-preload #header.alt {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background-image: url("../../images/In-Jazz-We-Trust-Prod_Logo.png");
+  background-image: url("../../images/In-Jazz-We-Trust-Prod-Logo.png");
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
