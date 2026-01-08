@@ -1709,27 +1709,33 @@ input[type=radio] + label:before {
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
-.icon.alt:before {
-  background-color: #2f2613;
+.icon.alt:before, .icon.alt-inverted:before {
   border-radius: 100%;
-  color: #ede7e7;
   display: inline-block;
   height: 2em;
   line-height: 2em;
   text-align: center;
   width: 2em;
 }
+.icon.alt:before {
+  background-color: #2f2613;
+  color: #ede7e7;
+}
+.icon.alt-inverted:before {
+  background-color: #ede7e7;
+  color: #2f2613;
+}
 
-a.icon.alt:before {
+a.icon.alt:before, a.icon.alt-inverted:before {
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-a.icon.alt:hover:before {
+a.icon.alt:hover:before, a.icon.alt-inverted:hover:before {
   background-color: #d89215;
 }
-a.icon.alt:active:before {
+a.icon.alt:active:before, a.icon.alt-inverted:active:before {
   background-color: rgb(142.2659810127, 97.7416869523, 18.2340189873);
 }
 
@@ -2184,32 +2190,32 @@ button.primary:active,
 .button.primary:active {
   background-color: rgb(142.2659810127, 97.7416869523, 18.2340189873);
 }
-input[type=submit].primary-alt,
-input[type=reset].primary-alt,
-input[type=button].primary-alt,
-button.primary-alt,
-.button.primary-alt {
+input[type=submit].primary-inverted,
+input[type=reset].primary-inverted,
+input[type=button].primary-inverted,
+button.primary-inverted,
+.button.primary-inverted {
   background-color: #ede7e7;
   box-shadow: none;
   color: #2f2613;
 }
-input[type=submit].primary-alt:hover, input[type=submit].primary-alt:active,
-input[type=reset].primary-alt:hover,
-input[type=reset].primary-alt:active,
-input[type=button].primary-alt:hover,
-input[type=button].primary-alt:active,
-button.primary-alt:hover,
-button.primary-alt:active,
-.button.primary-alt:hover,
-.button.primary-alt:active {
+input[type=submit].primary-inverted:hover, input[type=submit].primary-inverted:active,
+input[type=reset].primary-inverted:hover,
+input[type=reset].primary-inverted:active,
+input[type=button].primary-inverted:hover,
+input[type=button].primary-inverted:active,
+button.primary-inverted:hover,
+button.primary-inverted:active,
+.button.primary-inverted:hover,
+.button.primary-inverted:active {
   background-color: #d89215;
   color: #ede7e7 !important;
 }
-input[type=submit].primary-alt:active,
-input[type=reset].primary-alt:active,
-input[type=button].primary-alt:active,
-button.primary-alt:active,
-.button.primary-alt:active {
+input[type=submit].primary-inverted:active,
+input[type=reset].primary-inverted:active,
+input[type=button].primary-inverted:active,
+button.primary-inverted:active,
+.button.primary-inverted:active {
   background-color: rgb(142.2659810127, 97.7416869523, 18.2340189873);
 }
 input[type=submit].disabled, input[type=submit]:disabled,
@@ -2851,7 +2857,7 @@ body.is-preload #header.alt {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background-image: url("../../images/In-Jazz-We-Trust-Prod-Logo.png");
+  background-image: url("/images/In-Jazz-We-Trust-Prod-Logo.png");
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;

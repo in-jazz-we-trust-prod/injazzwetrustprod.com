@@ -31,11 +31,9 @@
 			}
 		}
 
-		&.alt {
+		&.alt, &.alt-inverted {
 			&:before {
-				background-color: _palette(secondary-bold);
 				border-radius: 100%;
-				color: _palette(background);
 				display: inline-block;
 				height: 2em;
 				line-height: 2em;
@@ -43,10 +41,23 @@
 				width: 2em;
 			}
 		}
+
+		&.alt {
+			&:before {
+				background-color: _palette(secondary-bold);
+				color: _palette(background);
+			}
+		}
+		&.alt-inverted {
+			&:before {
+				background-color: _palette(background);
+				color: _palette(secondary-bold);
+			}
+		}
 	}
 
 	a.icon {
-		&.alt {
+		&.alt, &.alt-inverted {
 			&:before {
 				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
 			}
