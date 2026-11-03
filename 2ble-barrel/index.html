@@ -330,30 +330,15 @@
   			<script src="/assets/js/bandsintown.js"></script>
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
-
-					const images = [
-						'2Ble Barrel - La Baleine Blanche - Cedrick Not (111).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (116).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (121).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (122).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (127).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (128).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (132).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (137).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (151).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (164).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (170).png',
-'2Ble Barrel - La Baleine Blanche - Cedrick Not (186).png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 029.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 049.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 051.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 054.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 086.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 087.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 155.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 169.png',
-'2Ble Barrel - TLB - Auditorium Tarbes - Cedrick Not - 185.png',
-					];
+					const images = [];
+					const liveImagePrefix = '2ble-Barrel-Fête-du-Ciel-2026-copyright-Cedrick-Nöt';
+					const photoshootPrefix = '2ble-Barrel-Photoshoot-2026-copyright-Cedrick-Nöt';
+					for (let i = 1; i <= 6; i++) {
+						images.push(`${photoshootPrefix} (${i}).png`);
+					}
+					for (let i = 1; i <= 21; i++) {
+						images.push(`${liveImagePrefix} (${i}).png`);
+					}
 					const imageDir = '/images/2ble-barrel/gallery';
 
 					const gallery = document.getElementById('gallery');
